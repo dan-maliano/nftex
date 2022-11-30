@@ -1,0 +1,2096 @@
+
+
+html.no-touch {
+    overflow: auto !important;
+    padding-right: 0 !important;
+}
+
+.custom-select {
+    background-image: url('/assets/svg/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.875rem center
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+@keyframes toggle-left {
+    from { transform: translateX(1.5rem); }
+    to { transform: translateX(0px); }
+}
+
+@keyframes toggle-right {
+    from { transform: translateX(0px); }
+    to { transform: translateX(1.5rem); }
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.dark .dark\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-image: none;
+} 
+
+
+/* Buttons */
+.my-button {
+    font-size: 21px;
+    font-weight: 800;
+    background-color: #F9DF00;
+    color: #0d0d16;
+    height: 50px;
+    padding: 0 50px;
+    outline: none;
+    border: 2px solid #F9DF00;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.my-button:hover {
+    background-color: #0d0d16;
+    color: #F9DF00;
+    letter-spacing: 2px;
+}
+
+.prime-screen__button {
+    font-size: 21px;
+    height: 60px;
+}
+
+.prime-screen__button:hover {
+    padding: 0 60px;
+    letter-spacing: 2px;
+}
+
+.prime-screen__button_secondary {
+    background-color: #0d0d16;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.prime-screen__button_secondary:hover {
+    background-color: #0d0d16;
+    color: #F9DF00;
+    border: 2px solid #F9DF00;
+}
+
+.my-button.buy-button {
+    font-size: 16px;
+}
+
+.buy-button {
+    font-size: 16px;
+    background: #F9DF00;
+    color: #0d0d16;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #F9DF00;
+    padding: 0;
+    transition: .3s;
+}
+
+.buy-button:hover {
+    background-color: #0d0d16;
+    color: #F9DF00;
+    letter-spacing: 2px;
+}
+/* Buttons ------END------ */
+
+/* Buttons DARK */
+.dark .my-button:hover {
+    background-color: transparent;
+    color: #0d0d16;
+}
+
+.dark .prime-screen__button_secondary {
+    background-color: transparent;
+    color: #0d0d16;
+    border: 2px solid #0d0d16;
+}
+.dark .prime-screen__button_secondary:hover {
+    background-color: #0d0d16;
+    color: #F9DF00;
+    border: 2px solid #0d0d16;
+}
+/* Buttons DARK ------END------ */
+
+
+
+
+
+
+
+/* Header */
+
+.nav__link {
+    margin-right: 10px;
+}
+.nav__link a {
+    font-weight: 800;
+    background-color: rgb(148 159 216 / 10%);
+    transition: .3s;
+}
+
+.nav__link_active a {
+    color: #F9DF00;
+    background-color: rgb(148 159 216 / 20%);
+    transition: .3s;
+}
+
+.nav__link a:hover {
+    color: #F9DF00;
+}
+
+.my-button_connect {
+    font-size: 15px;
+    margin-left: 20px !important;
+}
+
+.my-button_connect:hover {
+    color:#f9df00;
+    background-color: #0d0d16;
+}
+
+.header__account-wrap {
+    background-color: #191a2c;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+.header__account-wrap:hover {
+    background-color: #202133;
+}
+
+.header__account-ava {
+    background-image:url(../jpg/ava-my-profile.jpg);
+    background-size: cover;
+}
+
+.color-mode-button {
+    margin-right: 10px;
+}
+/* Header ------END------ */
+
+
+/* Header DARK */
+.dark .nav__link a {
+    color: #90919d;
+    background-color: rgb(0 0 0 / 5%);
+}
+
+.dark .nav__link a:hover {
+    color: #191a2c;
+    background-color: rgb(0 0 0 / 10%);
+}
+
+.dark .nav__link_active a {
+    color: #191a2c;
+    background-color: #F9DF00;
+}
+
+.dark .header__account-wrap {
+    background-color: #f2f2f2;
+}
+/* Header DARK ------END------ */
+
+
+
+
+/* Main */
+.main {
+    background: linear-gradient(180deg, #06040E 0%, #171821 100%);
+}
+/* Main */
+
+
+
+/* Main DARK */
+.dark .main {
+    background-image: none;
+    background-color: #f4f6ff;
+}
+/* Main DARK ------END------ */
+
+
+
+
+
+
+/* Top Newest NFTs - paragraph2 */
+.top-nft__item {
+    position: relative;
+    background-color: #12101c;
+    padding: 40px 20px;
+    padding-bottom: 20px;
+    border: 0;
+    border-radius: 30px;
+    gap: 1.5rem;
+    background-size: cover;
+}
+.top-nft__item:before {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 80%;
+    height: 15px;
+    background: rgb(255 255 255 / 5%);
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    content: "";
+}
+.top-nft__item:after {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 60%;
+    height: 15px;
+    background: rgb(255 255 255 / 3%);
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    content: "";
+}
+.top-nft__item h1 {
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.top-nft__item h1::before {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 40px;
+    height: 3px;
+    background-color:#F9DF00;
+    transform: translateX(-50%);
+    content: "";
+}
+
+.top-nft__img-wrap {
+    width: 270px;
+    height: 270px;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #19161f;
+    box-shadow: 0px 64px 30px -30px rgba(0, 0, 0, 0.35);
+}
+
+.top-nft__img-wrap img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+/* Top Newest NFTs - paragraph2 ------END------ */
+
+
+/* Top Newest NFTs - paragraph2 DARK ------END------ */
+.dark .top-nft__img-wrap {
+    background-color: #fff;
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+/* Top Newest NFTs - paragraph2 DARK ------END------ */
+
+
+/* Benefits - paragraph3 */
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border: 2px solid #3d3c56;
+    padding: 40px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 64px 30px -30px rgba(0, 0, 0, 0.35);
+}
+
+.benefits__item h1 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.benefits__item h1:before {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 40px;
+    height: 3px;
+    background-color:#F9DF00;
+    transform: translateX(-50%);
+    content: "";
+}
+
+.benefits__item p {
+    font-size: 12px;
+    color: #acaac5;
+}
+
+.benefits__item img {
+    margin: 0 auto;
+    height: 80px;
+}
+/* Benefits - paragraph3 ------END------ */
+
+/* Benefits - paragraph3 DARK */
+.dark .benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border: 2px solid #e5e5e9;
+    padding: 40px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+/* Benefits - paragraph3 DARK ------END------ */
+
+
+/* Filters (Categories) */
+.filters-wrap {
+    background-color: #09080e;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.filter-button {
+    height: 38px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 12px;
+    border: 2px solid #3d3c56;
+    background: transparent;
+    color: #938ca8;
+    padding: 0 12px;
+    transition: .3s;
+}
+
+.filter-button:hover {
+    border: 2px solid #F9DF00;
+    transform: translateY(-3px);
+    color:#F9DF00;
+}
+
+.filter-button_active {
+    background-color:#F9DF00;
+    color:#101019;
+    border: 2px solid #F9DF00;
+    pointer-events: none;
+}
+
+.filter-button_active:hover {
+    background-color:#F9DF00;
+    color:#101019;
+    border: 2px solid #F9DF00;
+    transform: translateY(0);
+}
+
+.to-all-link {
+    color: #fff;
+    background-color: rgb(148 159 216 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 0 25px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.to-all-link:hover {
+    color:#f9df00;
+}
+/* Filters (Categories)  ------END------ */
+
+/* Filters (Categories) ------END------ */
+.dark .filters-wrap {
+    background-color: #fff;
+}
+
+.dark .filter-button {
+    border: 2px solid #938ca8;
+    color: #938ca8;
+}
+
+.dark .filter-button:hover {
+    border: 2px solid #101019;
+    color: #101019;
+}
+
+.dark .filter-button_active {
+    background-color: #F9DF00;
+    color: #101019;
+    border: 2px solid #101019;
+    pointer-events: none;
+}
+
+.dark .to-all-link {
+    color:#101019;
+    background-color: #EAECF7;
+}
+
+.dark .to-all-link:hover {
+    color:#f9df00;
+    background-color:#101019;
+}
+/* Filters (Categories) DARK ------END------ */
+
+
+
+/* NFT List */
+.nft-list__item {
+    border-radius: 30px;
+    border: 2px solid rgb(61 60 86 / 20%);
+    box-shadow: 0px 64px 30px -30px rgba(0, 0, 0, 0.35);
+}
+
+.nft-list__item-wrap {
+    padding: 6px;
+    padding-bottom: 0;
+}
+
+.nft-list__item-wrap.item-wrap_no-button {
+    padding-bottom: 20px;
+} 
+
+
+.nft-item__img {
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.nft-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nft-item__name {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nft-item__category {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.nft-item__price {
+    width: fit-content;
+    max-width: calc(100% - 15px);
+    background-color: #f9df00;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    margin-left: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.nft-item__price div {
+    width: fit-content;
+    background-color: transparent;
+}
+
+.nft-item__price div img {
+    height: 20px;
+    width: auto;
+    max-width: none;
+}
+
+.nft-item__price h1 {
+    font-size: 12px;
+    color:#101019;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.nft-item__creator-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 11px;
+}
+
+.nft-item__creator-address {
+    font-family: "JetBrains Mono";
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.nft-item__creator-address:hover {
+    color: #f9df00;
+}
+
+.nft-item__buy-wrap {
+    padding: 19px;
+}
+
+.nft-item__link {
+    border: 0;
+    width: fit-content;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 12px;
+    height: 27px;
+    background-color: rgb(148 159 216 / 20%);
+    transition: .3s;
+}
+
+.nft-item__link:hover {
+    color: #f9df00;
+}
+
+.empty-messege {
+    color: #f9df00;
+    font-size: 19px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* NFT List ------END------ */
+
+
+/* NFT List DARK */
+.dark .nft-list__item {
+    border: 2px solid #e5e5e9;
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+.dark .nft-item__img {
+    background-color: #fff;
+}
+
+.dark .nft-item__link {
+    color:#101019;
+    background-color: #EAECF7;
+}
+
+.dark .nft-item__link:hover {
+    color: #f9df00;
+    background-color: #101019;
+}
+
+.dark .empty-messege {
+    color: #12101c;
+}
+/* NFT List DARK ------END------ */
+
+
+/* Forms */
+.dragdrop__wrap {
+    height: auto;
+    border-radius: 12px;
+    border: 2px dashed #f9df00;
+    background-color: #12101c;
+    transition: .3s;
+}
+
+.dragdrop__wrap:hover {
+    background-color: transparent;
+    transform: translateY(-5px);
+}
+
+.dragdrop__wrap:hover .dragdrop__text-1 {
+    color: #f9df00;
+}
+
+.dragdrop__label {
+    padding: 30px;
+}
+
+.dragdrop__loaded-img {
+    border-radius: 20px;
+    border: 2px solid #f9df00;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.dragdrop__img {
+    width: auto;
+    height: 130px;
+    margin: auto;
+}
+
+.dragdrop__text-1 {
+    font-size: 25px;
+    color: #fff;
+    transition: .3s;
+}
+
+.dragdrop__text-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.dragdrop__text-3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #938ca8;
+}
+
+.my-input {
+    font-size: 15px;
+    height: 60px;
+    color: #fff;
+    background-color: #1B1C2C;
+    border-radius: 12px;
+    border: 2px solid rgb(61 60 86 / 20%);
+    padding-left: 30px;
+    letter-spacing: 1px;
+    transition: .3s;
+    outline: none;
+    box-shadow: none;
+}
+
+.my-input_price {
+    width: 100%;
+}
+
+.input-price__currency {
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #938ca8;
+    line-height: 1;
+    text-transform: uppercase;
+    transform: translateY(-40%);
+}
+
+.input-price__value {
+    position: absolute;
+    height: 22px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    filter: invert(1);
+}
+
+.dark .input-price__value {
+    filter: unset;
+}
+
+.my-textarea {
+    font-size: 15px;
+    color: #fff;
+    background-color: #1B1C2C;
+    border-radius: 12px;
+    border: 2px solid rgb(61 60 86 / 20%);
+    padding-left: 30px;
+    letter-spacing: 1px;
+    padding-top: 18px;
+    transition: .3s;
+    outline: none;
+    box-shadow: none;
+}
+
+.my-input:focus {
+    border: 2px solid rgb(61 60 86 / 85%);
+    outline: none;
+    box-shadow: none;
+}
+
+.my-textarea:focus {
+    border: 2px solid rgb(61 60 86 / 85%);
+    outline: none;
+    box-shadow: none;
+}
+
+.form__create-button {
+    background: #F9DF00;
+    color: #0d0d16;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #F9DF00;
+    transition: .3s;
+}
+
+.form__create-button:hover {
+    background-color: #0d0d16;
+    color: #F9DF00;
+    letter-spacing: 2px;
+}
+
+.my-input::-webkit-input-placeholder, .my-textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #938ca8;
+}
+.my-input::-moz-placeholder, .my-textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #938ca8;
+}
+.my-input:-ms-input-placeholder, .my-textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #938ca8;
+}
+.my-input:-moz-placeholder, .my-textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #938ca8;
+}
+/* Forms ------END------ */
+
+
+
+/* Forms DARK */
+.dark .dragdrop__wrap {
+    background-color: #ffffff;
+}
+
+.dark .dragdrop__wrap .dragdrop__text-1 {
+    color: #12101c;
+}
+
+.dark .dragdrop__wrap .dragdrop__text-2 {
+    color: #12101c;
+}
+
+.dark .dragdrop__wrap:hover .dragdrop__text-1 {
+    color: #938ca8;
+}
+
+.dark .dragdrop__wrap:hover {
+    border: 2px dashed #938ca8;
+}
+
+.dark .my-input {
+    color: #1B1C2C;
+    background-color: #ffffff;
+}
+
+.dark .my-input:focus {
+    border: 2px solid rgb(61 60 86 / 45%);
+}
+
+.dark .my-textarea {
+    color: #1B1C2C;
+    background-color: #ffffff;
+} 
+
+.dark .my-textarea:focus {
+    border: 2px solid rgb(61 60 86 / 45%);
+}
+
+.dark .form__create-button:hover {
+    background-color: transparent;
+    color: #0d0d16;
+}
+/* Forms DARK ------END------ */
+
+
+
+
+
+
+
+
+/* Modals */
+.my-modal {
+    background-color: #12101c;
+    border-radius: 30px;
+    border: 2px solid rgb(61 60 86 / 20%);
+}
+
+.my-modal img {
+    height: 70px;
+}
+
+.my-modal .my-button {
+    width: 100%;
+}
+
+.my-modal .modal__title {
+    color: #fff;
+    font-size: 30px;
+}
+
+.modal__text {
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto";
+}
+/* Modals ------END------ */
+
+
+/* Modals DARK ------END------ */
+.dark .my-modal .modal__title {
+    color: #191a2c;
+}
+
+.dark .modal__text {
+    color: #191a2c;
+}
+/* Modals DARK ------END------ */
+
+/* Titles */
+.prime-title {
+    font-weight: 800;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px !important;
+}
+
+.page-undertitle {
+    font-family: "Roboto";
+    color: #fff;
+    text-align: center;
+    margin-top: 0 !important;
+}
+
+.second-title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+}
+/* Titles ------END------ */
+
+
+/* Titles DARK */
+.dark .page-title {
+    color: #12101c;
+}
+
+.dark .page-undertitle {
+    color: #12101c;
+}
+
+.dark .second-title {
+    color: #12101c;
+}
+/* Titles ------END------ */
+
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background: #12121e;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.breadcrumbs>div {
+    display: flex;
+}
+
+.breadcrumb__item {
+    font-family: "JetBrains Mono";
+    font-size: 13px;
+    margin-left: 8px !important;
+}
+
+
+.breadcrumb__link {
+    color: #938ca8;
+}
+
+.breadcrumb__separator svg {
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+}
+
+.breadcrumb__separator svg path {
+    fill: #f9df00;
+}
+
+/* Breadcrumbs ------END------ */
+
+/* Breadcrumbs DARK */
+.dark .breadcrumbs {
+    background: #fff;
+}
+
+/* Breadcrumbs DARK ------END------ */
+
+
+
+
+
+
+/* Profile */
+.profile__cover {
+    position: relative;
+    height: 270px;
+}
+
+.profile__cover:before {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 3px solid #F9DF00;
+    border-radius: 30px;
+    content: "";
+}
+
+.profile__cover-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.profile__cover-wrap>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.profile__avatar {
+    position: absolute;
+    left: 70px;
+    bottom: -60px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.profile__avatar:before {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 3px solid #F9DF00;
+    border-radius: 50%;
+    content: "";
+}
+
+.profile__avatar-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.profile__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 75px;
+    background-color: #09080e;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+
+
+.profile__address-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #938ca8;
+    text-transform: uppercase;
+}
+
+.profile__address {
+    font-size: 25px;
+    color: #fff;
+}
+
+.profile__address-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.copy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(148 159 216 / 10%);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.copy-button:hover {
+    border: 2px solid #f9df00;
+}
+
+.copy-button svg {
+    height: 70%;
+    width: auto;
+}
+
+.copy-button svg path {
+    fill: #f9df00;
+    transition: .3s;
+}
+
+.profile__list-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #09080e;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.profile__list-head .filters-wrap {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.profile__list-count {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.profile__count-title {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #938ca8;
+    margin-right: 10px;
+}
+
+.profile__count-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 38px;
+    background-color: #f9df00;
+    border-radius: 12px;
+    color: #101019;
+    padding: 15px;
+}
+.profile__count-number p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+/* Profile ------END------ */
+
+/* Profile ------END------ */
+.dark .profile__info {
+    background-color: #fff;
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+
+.dark .profile__address {
+    font-size: 25px;
+    color: #101019;
+}
+
+.dark .copy-button {
+    color: #101019;
+    background-color: #EAECF7;
+}
+
+.dark .copy-button svg path {
+    fill: #101019;
+}
+
+.dark .copy-button:hover svg path {
+    fill: #f9df00;
+    background-color: #101019;
+}
+
+.dark .copy-button:hover {
+    background-color: #101019;
+    border-color: transparent;
+}
+
+.dark .copy-button:hover svg path {
+    fill: #f9df00;
+}
+
+.dark .profile__list-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+
+/* Profile DARK ------END------ */
+
+
+
+
+
+
+
+
+
+
+
+/* NFT Item Page */
+.art-prev {
+    background-color: #12101c;
+    border-radius: 30px;
+    border: 2px solid rgb(61 60 86 / 20%);
+    box-shadow: 0px 64px 30px -30px rgb(0 0 0 / 35%);
+    padding: 10px;
+    padding-right: 40px;
+}
+
+
+.dark .art-prev {
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+
+.art-prev__img-wrap {
+    width: 380px;
+    height: 380px;
+}
+
+.art-prev__img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.art-prev .my-button {
+    width: fit-content;
+}
+
+.art-prev__title {
+    line-height: 1;
+    font-size: 30px;
+}
+
+.art-prev__category {
+    color: #938ca8;
+    font-size: 14px;
+}
+
+.art-prev__description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.art-prev__user-wrap {
+    background-color: #191a2c;
+    padding: 8px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.art-prev__user-ava {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(../jpg/ava-user-profile.jpg);
+    background-size: cover;
+}
+
+.art-prev__user-info {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.art-prev__user-info p:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1;
+    color: #938ca8;
+    text-transform: uppercase;
+}
+.art-prev__user-info p:nth-child(2) {
+    font-family: 'JetBrains Mono', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.art-prev__price {
+    width: fit-content;
+    background-color: #f9df00;
+    height: 40px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.art-prev__price h1 {
+    font-size: 17px;
+    color: #101019;
+    margin-left: 10px;
+}
+
+.art-prev__price-icon {
+
+}
+/* NFT Item Page ------END------ */
+
+/* NFT Item Page DARK */
+.dark .art-prev__user-wrap {
+    background-color: #f2f2f2;
+    padding: 8px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.dark .art-prev__user-wrap p:nth-child(2) {
+    color: #101019;
+}
+/* NFT Item Page DARK ------END------ */
+
+
+
+
+
+/* User Dropdown */
+.user-dropdown {
+    background-color: #2a2c3e;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.user-dropdown__account {
+    background-color: rgb(7 6 16 / 25%);
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.user-dropdown__account:hover {
+    border: 2px solid #f9df00;
+}
+
+.user-dropdown__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'JetBrains Mono', sans-serif;
+    color: #fff;
+    height: 50px;
+    font-size: 13px;
+    line-height: 1;
+    background-color: #ffffff0d;
+    border-radius: 10px;
+    margin-top: 10px !important;
+    padding-left: 15px;
+    transition: .3s;
+}
+
+.user-dropdown__link:hover {
+    color: #101019;
+    background-color: #f9df00;
+    padding-left: 20px;
+}
+
+.user-dropdown__account-logo {
+    width: 50px;
+    height: auto;
+    background-color: #191a2c;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.user-dropdown__account-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.user-dropdown__account-balance p:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1;
+    color: #938ca8;
+}
+
+.user-dropdown__account-balance p:nth-child(2) {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    color: #fff;
+    margin-top: 4px;
+}
+/* User Dropdown ------END------ */
+
+
+/* User Dropdown DARK */
+.dark .user-dropdown {
+    background-color: #fff;
+}
+
+.dark .user-dropdown__account {
+    background-color: rgb(249 249 249);
+    border: 2px solid #00000008;
+}
+
+.dark .user-dropdown__account-balance p:nth-child(2) {
+    color: #191a2c;
+}
+
+.dark .user-dropdown__account:hover {
+    border-color: #938ca8;;
+}
+
+.dark .user-dropdown__link {
+    color: #938ca8;
+    background-color: #f2f2f2;
+}
+
+.dark .user-dropdown__link:hover {
+    color: #101019;
+    background-color: #f9df00;
+}
+/* User Dropdown DARK ------END------ */
+
+
+
+
+.resell-purchased-wrap {
+    padding: 40px 75px;
+    background-color: #09080e;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resell-purchased__text {
+    margin-left: 0 !important;
+    margin-top: 20px;
+}
+
+.resell-purchased__text p {
+    text-align: center;
+}
+
+
+.resell-purchased__text p:first-child {
+    font-family: 'JetBrains Mono';
+    font-size: 35px;
+}
+
+.resell-purchased__text p:nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1;
+    color: #938ca8;
+    margin-top: 15px;
+}
+
+
+.like-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #1f2031;
+    border-radius: 50%;
+}
+
+
+.like-icon-wrap svg {
+    height: 60%;
+}
+
+.like-icon-wrap svg path {
+    fill: #f9df00;
+}
+
+
+.dark .resell-purchased-wrap {
+    background-color: #fff;
+    box-shadow: 0px 54px 30px -30px rgb(0 0 0 / 8%);
+}
+
+
+
+
+/* Hidden Nav */
+.hidden-nav {
+    background-color: #2a2c3e;
+    padding: 15px;
+}
+
+.hidden-nav__link {
+    background-color: rgb(255 255 255 / 5%);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.hidden-nav__link_active {
+    background-color:#f9df00;
+    color: #191a2c;
+}
+
+.hidden-nav__account-wrap {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #191a2c;
+}
+
+.hidden-nav__account-ava {
+    width: 36px;
+    height: 36px;
+    background-image: url(../jpg/ava-my-profile.jpg);
+    background-size: cover;
+}
+
+.hidden-nav__account-info {
+    justify-content: center;
+    margin-left: 8px !important;
+}
+
+.hidden-nav__account-info p:first-child {
+    font-size: 10px;
+    line-height: 1;
+    flex: 0;
+}
+
+.hidden-nav__account-info p:nth-child(2) {
+    font-size: 10px;
+    line-height: 1;
+    margin-top: 5px;
+}
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu button {
+    color: #f9df00;
+}
+
+.hamburger-menu button:active,.hamburger-menu button:focus,.hamburger-menu button:hover {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+/* Hidden Nav ------END------ */
+
+
+/* Hidden Nav DARK ------END------ */
+.dark .hidden-nav__link {
+    color: #90919d;
+    background-color: rgb(0 0 0 / 5%);
+}
+
+.dark .hidden-nav__link_active {
+    color: #191a2c;
+    background-color: #F9DF00;
+}
+
+.dark .hidden-nav__account-wrap {
+    background-color: #f2f2f2;
+}
+/* Hidden Nav DARK ------END------ */
+
+
+
+.footer {
+    display: flex;
+    background-color: #09080e;
+    color: #fff;
+}
+
+.footer__wrap {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__nav {
+    display: flex;
+    flex: 1;
+}
+
+.footer__logo {
+    height: 40px;
+}
+
+.footer__company-descr {
+    height: auto;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.footer__copyright {
+    color: #a2a6d0;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-title {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer__column a {
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #938ca8;
+    transition: .3s;
+}
+.footer__column a:hover {
+    color: #f9df00;
+}
+
+@media (max-width: 1699.98px) {
+}
+
+
+/*X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+
+    .header__logo {
+        height: 30px;
+    }
+    .header__right-side {
+        margin-left: 40px;
+    }
+    .header__account-wrap {
+        padding: 5px 10px;
+    }
+    .header__account-address {
+        font-size: 13px;
+    }
+    .filter-button {
+        font-size: 12px;
+    }
+    .my-button {
+        font-size: 19px;
+    }
+    .my-button.buy-button {
+        font-size: 14px;
+    }
+    .nft-item__name {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .nft-item__category {
+        margin-left: 10px;
+    }
+    .nft-item__price {
+        margin-left: 10px;
+    }
+    .nft-item__creator-title {
+        margin-left: 10px;
+    }
+    .nft-item__creator-address {
+        margin-left: 10px;
+    }
+    .nft-item__buy-wrap {
+        padding: 15px;
+    }
+    .prime-undertitle {
+        margin-top: 10px;
+    }
+
+}
+
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .header__logo {
+        height: 28px;
+    }
+    .nav__link_active a {
+        font-size: 13px;
+    }
+    .nav__link a {
+        font-size: 13px;
+    }
+    .header__account-address {
+        font-size: 12px;
+    }
+    .header__account-ava {
+        width: 35px;
+        height: 35px;
+    }
+    .header__account-info {
+        margin-left: 8px !important;
+    }
+    .prime-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .page-title {
+        font-size: 30px;
+    }
+    .page-undertitle {
+        font-size: 16px;
+    }
+    .my-button {
+        height: 50px;
+        padding: 0 30px;
+        font-size: 16px;
+    }
+    .prime-screen__button:hover {
+        padding: 0 35px;
+    }
+    .second-title {
+        font-size: 25px;
+    }
+
+    .top-nfts-wrap {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .top-nft__item h1 {
+        font-size: 20px;
+    }
+
+    .top-nft__item {
+        padding: 20px 20px;
+        gap: 0.4rem;
+    }
+
+    .top-nft__img-wrap {
+        width: 230px;
+        height: 230px;
+    }
+    .filter-button {
+        font-size: 11px;
+        margin-left: 3px !important;
+        padding: 0 10px;
+    }
+    .create-form-wrap {
+        order: 2;
+    }
+    .create-img-wrap  {
+        margin-bottom: 30px;
+    }
+    .create-img-wrap img  {
+        width: 60%;
+        margin: auto;
+    }
+    .art-prev__info {
+        width: 90%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    .art-prev .my-button {
+        width: 100%;
+    }
+    .art-prev {
+        padding-top: 30px;
+    }
+    .art-prev {
+        padding-right: 10px;
+    }
+    
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .nav__link {
+        display: none;
+    }
+    
+    .nav__link_active {
+        display: none;
+    }
+
+    .color-mode-button {
+        display: none;
+    }
+
+    .header__account-wrap {
+        display: none;
+    }
+
+    .header__left-side {
+        margin-left: 50px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .prime {
+        flex-direction: column;
+    }
+
+    .prime__left-side {
+        width: 100%;
+    }
+
+    .prime__right-side {
+        margin-top: 30px;
+    }
+    .prime__right-side img {
+        width: 80%;
+        margin: auto;
+    }
+    .benefits__item {
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+    .top-nft__img-wrap {
+        width: 160px;
+        height: 160px;
+    }
+
+    .top-nft__item {
+        padding: 15px 15px;
+        gap: 0.2rem;
+        border-radius: 20px;
+    }
+
+    .top-nft__item:before {
+        bottom: -10px;
+        height: 10px;
+    }
+
+    .top-nft__item:after {
+        bottom: -20px;
+        height: 10px;
+    }
+
+    .buy-button {
+        height: 40px;
+    }
+
+    .my-button {
+        font-size: 14px;
+    }
+
+    .filters-wrap {
+        flex-direction: column;
+    }
+
+    .filters-wrap .to-all-link {
+        margin-top: 10px;
+    }
+
+    .filter-button {
+        font-size: 10px;
+        margin-left: 3px !important;
+        padding: 0px 8px;
+    }
+
+    .filters-items-wrap {
+        justify-content: space-between;
+    }
+
+    .nft-list__wrap {
+        gap: 1rem;
+    }
+
+    .create-img-wrap img {
+        width: 80%;
+    }
+
+    .profile__cover {
+        height: 230px;
+    }
+
+    .profile__avatar {
+        left: 40px;
+        bottom: -30px;
+        height: 90px;
+    }
+
+    .profile__info {
+        padding: 25px 30px;
+        padding-top: 30px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+
+    .profile__address {
+        font-size: 20px;
+    }
+
+    .copy-button {
+        width: 45px;
+        height: 45px;
+        margin-left: 15px;
+    }
+
+    .profile__address-title {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .profile__list-head .filters-wrap {
+        flex-direction: row;
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .prime__left-side {
+        align-items: flex-start;
+    }
+    .top-nfts-wrap {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .top-nft__item {
+        width: 80%;
+        gap: 0.4rem;
+        margin: auto;
+    }
+    .top-nft__img-wrap {
+        width: 230px;
+        height: 230px;
+    }
+    .benefits-wrap {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .second-title {
+        text-align: center;
+    }
+    .see-all-title {
+        flex-direction: column;
+    }
+    .see-all-title .to-all-link {
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .benefits__item {
+        gap: 1rem;
+    }
+    .profile__cover {
+        height: 180px;
+    }
+    .profile__info {
+        padding: 20px 25px;
+        padding-top: 30px;
+    }
+    .profile__address-title {
+        font-size: 14px;
+    }
+    .profile__address {
+        font-size: 16px;
+    }
+    .copy-button {
+        width: 40px;
+        height: 40px;
+    }
+    .art-prev__users{
+        width: 100%;
+    }
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .my-button_connect {
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+        margin-left: 0 !important;
+    }
+    .prime {
+        margin: 20px;
+    }
+    .double-buttons-wrap {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .double-buttons-wrap .my-button {
+        width: 100%;
+    }
+    .double-buttons-wrap div {
+        width: 100%;
+    }
+    .prime__right-side img {
+        width: 100%;
+    }
+    .top-nft__item {
+        width: 100%;
+    }
+    .second-title {
+        font-size: 23px;
+    }
+    .filters-wrap {
+        flex-direction: column;
+        margin-top: 20px !important;
+    }
+    .dragdrop__text-1 {
+        font-size: 22px;
+    }
+    .dragdrop__text-2 {
+        margin-top: 5px;
+    }
+    .create-img-wrap img {
+        width: 100%;
+    }
+    .page-undertitle {
+        font-size: 14px;
+    }
+    .my-button:hover {
+        letter-spacing: 0;
+    }
+    .buy-button:hover {
+        letter-spacing: 0;
+    }
+    .form__create-button:hover {
+        letter-spacing: 0;
+    }
+    .profile__list-head .filters-wrap {
+        flex-direction: row;
+        margin-top: 0 !important;
+    }
+    .profile__info {
+        padding: 13px 15px;
+        padding-top: 20px;
+    }
+    .profile__address {
+        font-size: 10px;
+    }
+    .profile__address-title {
+        font-size: 10px;
+    }
+    .profile__info {
+        padding: 15px 10px;
+        padding-top: 20px;
+    }
+    .copy-button {
+        width: 26px;
+        height: 26px;
+        margin-left: 6px;
+        border-radius: 6px;
+    }
+    .copy-button svg {
+        height: 100%;
+    }
+    .profile__info {
+        margin-bottom: 20px;
+    }
+    .profile__cover {
+        height: 150px;
+    }
+    .profile__avatar {
+        left: 20px;
+        bottom: -30px;
+        height: 70px;
+    }
+    .profile-bottom-wrap {
+        padding-top: 30px;
+    }
+    .breadcrumb__item {
+        font-size: 10px;
+        margin-left: 3px !important;
+    }
+    .breadcrumb__separator svg {
+        position: relative;
+        margin-left: 3px;
+        height: 10px;
+        top: -10px;
+    }
+    .breadcrumb__separator {
+        height: 10px;
+    }
+    .resell-purchased__text p:first-child {
+        font-size: 25px;
+    }
+    .resell-purchased-wrap {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    .resell-purchased__text p:nth-child(2) {
+        font-size: 19px;
+    }
+    .art-prev__info {
+        width: 95%;
+        margin: auto;
+        padding: 10px 0 30px;
+    }
+    .art-prev__img-wrap {
+        width: 280px;
+        height: 280px;
+    }
+    .art-prev {
+        padding-top: 20px;
+    }
+    .art-prev__description {
+        font-size: 12px;
+    }
+    .art-prev__title {
+        font-size: 23px;
+    }
+}
